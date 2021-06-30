@@ -7,7 +7,7 @@
 
 - 📫 Mail **lascano.gonzalo.ivan@gmail.com**
 
-- ⚡ Sobre el proyecto **Este proyecto usa SASS y esta todo instalado por CDN**
+- ⚡ Sobre el proyecto **Este proyecto usa SASS y Bootstrap, esta todo instalado por CDN**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
