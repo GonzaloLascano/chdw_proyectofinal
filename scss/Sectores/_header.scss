@@ -1,0 +1,32 @@
+/*
+    ========================================
+    Header
+    ========================================
+*/
+
+header {
+    padding: 3% 0 5% 0;
+    width:inherit;
+    height:50%;
+    background-color: white;
+    .header_link {
+        transition: all, .8s;
+        &:link {
+            text-decoration: none;
+            color: black;
+        }
+        &:hover {
+            letter-spacing: 55px;
+            color: rgba(0, 0, 0, 0.644);
+            @media (max-width: 500px) {
+                letter-spacing: 24px;
+            }
+        }
+        &:visited {
+            text-decoration: none;
+            color: black;   
+        }
+    }
+}
+
+

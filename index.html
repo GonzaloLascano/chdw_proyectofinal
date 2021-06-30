@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- version 21/06/2021 Desafio SEO:-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0"> 
+    
+    <!-- bootstrap! -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+    crossorigin="anonymous">
+
+    <!-- Vinculando CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Importando fuentes de "google fonts" -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,200;1,400&family=Spartan:wght@100;300;500;600&display=swap" 
+    rel="stylesheet">
+
+    <!-- SEO -->
+
+    <meta name="description" content="Admigual Arte digital - Generalista 3d, 
+    Editor de video, Animador 2d. Disponible para contacto: telefono, mail. Tambien redes sociales: vimeo, instagram, linked-in. Comisiones abiertas">
+    <meta name="keywords" content="diseño, multimedia, 3d, 2d, animacion, video, edicion, montaje, artista,
+    portfolio, contacto, encargo, arte, digital">
+
+    
+    <title>Admigual Portfolio - Home</title>
+
+</head>
+<body>
+    
+    <!-- encabezado -->
+    
+    <header id="home">
+
+        <h1><a class="header_link" href="pages/la-pieza.html">ADMIGUA<span>L</span></a></h1>
+        
+        <!-- la idea es que al tocar la imagen la pagina scrollee al reel y la pestaña "reel" del <nav> aparezca resaltada  -->
+
+        <h3> <p class="upper"> 3D Generalist - Animator - Video Editor </p> 
+        <p>...o algo por el estilo.</p></h3>
+    </header>
+
+    <!-- Separador Menu -->
+
+    <nav>
+            
+        <ul class="main-menu">
+             <li class="reel"><a href="index.html#demo_reel" title="Ver demo reel"> reel </a></li>
+             <li><a href="index.html#sobre-mi"  title="Ver sobre mi"> sobre mi</a></li>
+             <li><a href="index.html#contactame"  title="Ver info de contacto"> contacto </a></li>
+             <li class="submenu-parent"><a href="index.html#portfolio"  title="Ver Portfolio"> portfolio</a>
+                <ul class="submenu">
+                    <li><a href="link a portfolio parcial"  title="Portfolio 3d"> 3D </a></li>
+                    <li><a href="link a portfolio parcial"  title="Portfolio de animacion"> Animación </a></li>
+                    <li><a href="link a portfolio parcial"  title="Portfolio de edicion"> Edición de Video </a></li>
+                </ul>
+            </li>
+        </ul>            
+            
+    </nav>
+
+    <!-- Contenido principal del cuerpo. La idea es que este sea el unico contenido de la pagina que se
+    reemplace al tocar en los diferentes links del menu -->
+
+
+  <main>
+
+    <section id="demo_reel">
+
+        <!-- --------------------carousel-------------------- -->
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"> <!-- se puede sacar o cambiar este este id? -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/371497001?color=ff0179&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+              <div class="carousel-item">
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/296347489?color=c9ff23" style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                   frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                   <script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+              <div class="carousel-item">
+                <div style="padding:56.25% 0 0 0;position:relative;">
+                  <iframe src="https://player.vimeo.com/video/298697003?color=ff9933" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                  <script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+            </div>
+          <!-- se me superponen los botones a los comandos del video -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+      </div>
+
+    </section>
+
+    <section id="sobre-mi">
+        
+      <div class="background"></div>
+
+      <h2>QUE ES ADMIGUAL?:</h2>
+
+      <div class="sobregrid">
+
+         <p>
+          Corta. Me llamo Gonzalo Ivan Puñales Lascano. No solo un nombre peculiar, sino tambien largo. 
+          Por eso, "Admigual". Es el alias bajo el cual reconozco todo mi trabajo. 
+          Por decirlo de algun modo.
+          <br>
+          <br> 
+          Admigual es una version acortada de decir "signo de admiración igual" (!=) 
+          Nació de una anecdota de cuando era estudiante, 
+          cuyo significado me pareció relevante para todo lo que hago en general, 
+          en lo referido a creatividad.
+        </p>
+      
+        <img src="pages/images/sobremi/Lowpolym3.png" alt="Artwork Promocional">
+      
+      </div>
+
+  </section>
+
+  <section id="portfolio">
+
+    <h2>PORTFOLIO:</h2>
+
+    <div class="portGrid">
+      <ul class="portitems">
+         <li><a href=""> <img src="images/portfolio/testimage_square.png" alt=""></a></li>
+         <li><a href=""> <img src="images/portfolio/testimage_square.png" alt=""></a></li>
+         <li><a href=""> <img src="images/portfolio/testimage_square.png" alt=""></a></li>
+         <li><a href=""> <img src="images/portfolio/testimage_square.png" alt=""></a></li>
+         <li><a href=""> <img src="images/portfolio/testimage_square.png" alt=""></a></li>
+         <li><a href=""> <img src="images/portfolio/testimage_square.png" alt=""></a></li>
+         <li><a href=""> <img src="images/portfolio/testimage_square.png" alt=""></a></li>
+         <li><a href=""> <img src="images/portfolio/testimage_square.png" alt=""></a></li>
+      </ul>   
+      <aside>
+        <a href="https://admigualanimation.tumblr.com/" target="_blank"> <img src="images/portfolio/nav artwork concept.png" alt="ver portfolio completo"> </a>
+      </aside>
+    </div>
+
+  </section>
+
+  <section id="contactame">
+
+        <h2>Diga, mi Rey/na</h2>
+    <!--No se vio hasta el momento en clase la teoria para crear y hacer funcionar un formulario. -->
+    
+    <div class="contact-grid">
+      <div class="tunombre">
+        <label for="formControlInput" class="form-label"><h5>Nombre:</h5></label>
+        <input type="email" class="form-control" id="formControlInput" placeholder="¿como te llamas?">
+      </div>
+      <div class="tuemail">
+        <label for="formControlInput" class="form-label"><h5>E-mail:</h5></label>
+        <input type="email" class="form-control" id="formControlInput" placeholder="tu@email.com">
+      </div>
+      <div class="tumensaje">
+        <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"><h5>Mensaje:</h5></label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+      <button type="button enviarbtn" class="btn btn-primary">Enviar!</button>
+
+    </div>
+
+    <img src="images/portfolio/testimage_square.png" alt="señal hacia footer"> 
+    <!-- imagen apuntando al pie de pagina donde estan mis datos de contacto y mis redes
+    probablemente un personaje o una pequeña animacion en gif que señale. -->
+  </section>
+
+  </main>
+
+    <!-- footer -->
+
+    <footer>
+
+     <a href="#home" class="home-button" title="ir al inicio"><img src="images/chevron-up.png" alt="Ir al inicio"></a>
+        
+    <div id="contact_info">   
+        
+        <h4>CONTACT INF<span>O</span></h4>
+    
+        <div class="infotext">
+            
+            <p>
+             Nuñez - C.A.B.A. - Argentina <br>
+             codigo postal sarasa <br>
+             Sitio web diseñado por Admigual <br> 
+            </p>
+            <p>
+                Telefono: +54 9 11 34xxxx658 <br>
+                admigualanimation@gmail.com
+            </p>
+        </div>
+
+            <!-- las imagenes de los iconos son temporales hasta tener los propios acorde al resto del diseño
+            del sitio web -->
+           <ul class="socialmedia"> 
+                <li><a href="https://web.whatsapp.com/" title="comunicate por whatsapp" target="_blank"> <img class="social_icon" src="images/whatsapp.png" alt="whatsapp logo" loading="lazy"> </a> </li>
+                <li><a href="https://www.linkedin.com/in/admigual/" title="comunicate por whatsapp" target="_blank"> <img class="social_icon" src="images/linkedin.png" alt="linkedin logo" loading="lazy"> </a> </li>
+                <li><a href="https://vimeo.com/admigual/" title="comunicate por whatsapp" target="_blank"> <img class="social_icon" src="images/vimeo-social-logo.png" alt="vimeo logo" loading="lazy"> </a> </li>
+                <li><a href="https://www.instagram.com/admigual/" title="comunicate por whatsapp" target="_blank"> <img class="social_icon" src="images/instagram.png" alt="instagram logo" loading="lazy"> </a> </li>
+       
+            </ul>
+    </div>
+    </footer>
+
+    <!-- bootstrap bundle(?) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+    crossorigin="anonymous"></script>
+</body>
+</html>

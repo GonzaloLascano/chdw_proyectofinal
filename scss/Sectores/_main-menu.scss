@@ -1,0 +1,92 @@
+/*
+    ========================================
+    Main menu
+    ========================================
+*/
+nav {
+    position: sticky;
+    top: 0px;
+    z-index: +1;
+    .main-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0; 
+        font-family: 'montserrat', sans-serif;
+        font-weight: bold;
+        letter-spacing: 14px;
+        background-color: white;
+        text-transform: uppercase;
+
+        @media (max-width: 900px) {
+            .reel {
+                display:none;
+            }
+            flex-direction: column;
+            letter-spacing: 10px;
+            font-size: small; 
+        }
+       
+        /* submenu -----------------*/
+
+        .submenu {
+            background-color: map-get($paleta, calidosm);
+            position: absolute;
+            display: none;
+            margin: 0;
+            padding: 0;
+            li {
+                text-align: start;
+                width: 100%;
+                font-size: smaller;
+                border-right: 0;
+                border-bottom: dotted map-get($paleta, frio ) 2px;
+                letter-spacing: 4px;
+                z-index: +2;
+                a{
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .submenu-parent:hover .submenu {
+            display: block;
+        }/* esta seleccion iria anidada en .submenu o a .submenu-parent ? */
+        
+        /* /submenu ---------------*/
+       
+        li {
+            width: 400px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            border-right: 1px solid map-get($paleta , calidob );
+            &:last-child {
+                border-right: 0;
+            }
+            @media (max-width: 900px) {
+                border: none;
+            }
+        }
+        a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            color: rgb(68, 63, 63);
+            transition: all, .8s;
+            &:hover {
+                background-color: map-get($paleta , frio );
+            } 
+        }
+    }
+}
+
+ 
+
+
+
+
+
+
