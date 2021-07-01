@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Gonza Puñales(si...) Lascano</h1>
-<h3 align="center">Artista Audiovisual & Baby Web Developer</h3>
+<h3 align="center">Artista Audiovisual & "Baby" Web Developer</h3>
 
 - 🔭 Estoy metiendole a **Admigual - Portfolio Web: Proyecto Final para el curso de Desarrollo Web en Coder House**
 
@@ -7,7 +7,7 @@
 
 - 📫 Mail **lascano.gonzalo.ivan@gmail.com**
 
-- ⚡ Sobre el proyecto **Este proyecto usa SASS y Bootstrap, esta todo instalado por CDN**
+- ⚡ Sobre el proyecto **Este proyecto usa SASS y Bootstrap, esta todo instalado por CDN.**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
