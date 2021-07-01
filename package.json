@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "<h1 align=\"center\">Hi 👋, I'm Gonza Puñales(si...) Lascano</h1> <h3 align=\"center\">Artista Audiovisual & \"Baby\" Web Developer</h3>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GonzaloLascano/chdw_proyectofinal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GonzaloLascano/chdw_proyectofinal/issues"
+  },
+  "homepage": "https://github.com/GonzaloLascano/chdw_proyectofinal#readme"
 }

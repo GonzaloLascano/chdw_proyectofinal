@@ -24,43 +24,6 @@ footer {
             width: 30px;
         }
     }
-    .infotext {
-        padding: 0px 20px;
-        margin: 10px 0px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.1vw;
-        font-weight: inherit;
-        color: map-get($paleta, gris);
-        display: grid;
-        grid-template-columns: .7fr 1fr;
-        justify-content: center;
-        align-items: self-start;
-        border: dotted 2px grey;
-        border-bottom: none;
-        border-top: none;
-        @media (max-width: 900px) {
-            padding: 10px 0px;
-            margin: 0px 20px;
-            font-size: 3vw;
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-column-gap: 10px;
-            border: none;
-            border-bottom: dotted 2px grey;
-            border-top: dotted 2px grey;
-        }
-        @media (max-width: 500px) {
-            padding: 10px 0px;
-            margin: 0px 20px;
-            font-size: 3vw;
-            border: none;
-            border-bottom: dotted 2px grey;
-            border-top: none;
-        }
-        p {
-            margin: 0;
-        }
-    }
     #contact_info {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
@@ -68,7 +31,7 @@ footer {
         align-items: center;
         width: 100%;
         color: rgb(28, 28, 75);
-        background: map-get($paleta , gradf);
+        background: map-get($paleta , negro);
         @media (max-width: 900px) {
             display: grid;
             grid-template-columns: 1fr; 
@@ -76,6 +39,54 @@ footer {
         @media (max-width: 500px) {
             display: grid;
             grid-template-columns: 1fr;
+        }
+        .infotext {
+            padding: 0px 20px;
+            margin: 10px 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.2vw;
+            font-weight: inherit;
+            @include textgradient(map-get($paleta , gradf));
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr .3fr;
+            row-gap: 4px;
+            justify-content: center;
+            align-items: self-start;
+            border: dotted 2px grey;
+            border-bottom: none;
+            border-top: none;
+            @media (max-width: 900px) {
+                padding: 10px 0px;
+                margin: 0px 20px;
+                font-size: 3vw;
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-column-gap: 10px;
+                border: none;
+                border-bottom: dotted 2px grey;
+                border-top: dotted 2px grey;
+
+            }
+            @media (max-width: 500px) {
+                padding: 10px 0px;
+                margin: 0px 20px;
+                font-size: 3vw;
+                border: none;
+                border-bottom: dotted 2px grey;
+                border-top: none;
+            }
+            .credits{
+                margin: auto;
+                grid-column: 1 / span 2 ;
+                @include titlespacing(.5vw, 1.3vw ,bold);
+                @media (max-width: 900px) {
+                    @include titlespacing(.5vw, 3vw ,bold)
+                }
+            }
+            p {
+                margin: 0%;
+            }
         }
         .socialmedia {
             margin:10px 0;

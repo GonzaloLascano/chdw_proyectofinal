@@ -17,6 +17,7 @@ body {
 Mapa de color (no estan aplicados en todos lados)
 ===================== 
  */
+/* Text Gradient */
 /*
 =====================
 Letter Spacing: 
@@ -120,8 +121,7 @@ h3 p:first-child {
 }
 
 h4 {
-  display: flex;
-  margin: 10px 0;
+  margin: 10px auto;
   padding: 10px 0;
   font-family: "montserrat", sans-serif;
   font-style: normal;
@@ -131,6 +131,9 @@ h4 {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  background: linear-gradient(2deg, #ffd889 -6%, #ff80ff 154%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   letter-spacing: 4px;
   font-size: 30px;
   font-weight: bolder;
@@ -321,15 +324,40 @@ footer .home-button img:hover {
     width: 30px;
   }
 }
-footer .infotext {
+footer #contact_info {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  color: #1c1c4b;
+  background: black;
+}
+@media (max-width: 900px) {
+  footer #contact_info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  footer #contact_info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+footer #contact_info .infotext {
   padding: 0px 20px;
   margin: 10px 0px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   font-weight: inherit;
-  color: #677286;
+  background: linear-gradient(2deg, #ffd889 -6%, #ff80ff 154%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: grid;
-  grid-template-columns: 0.7fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.3fr;
+  row-gap: 4px;
   justify-content: center;
   align-items: self-start;
   border: dotted 2px grey;
@@ -337,7 +365,7 @@ footer .infotext {
   border-top: none;
 }
 @media (max-width: 900px) {
-  footer .infotext {
+  footer #contact_info .infotext {
     padding: 10px 0px;
     margin: 0px 20px;
     font-size: 3vw;
@@ -350,7 +378,7 @@ footer .infotext {
   }
 }
 @media (max-width: 500px) {
-  footer .infotext {
+  footer #contact_info .infotext {
     padding: 10px 0px;
     margin: 0px 20px;
     font-size: 3vw;
@@ -359,29 +387,28 @@ footer .infotext {
     border-top: none;
   }
 }
-footer .infotext p {
-  margin: 0;
+footer #contact_info .infotext .credits {
+  margin: auto;
+  grid-column: 1/span 2;
+  letter-spacing: 0.5vw;
+  font-size: 1.3vw;
+  font-weight: bold;
 }
-footer #contact_info {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-  color: #1c1c4b;
-  background: linear-gradient(2deg, #ffd889 -6%, #ff80ff 154%);
+footer #contact_info .infotext .credits span {
+  letter-spacing: 0px;
 }
 @media (max-width: 900px) {
-  footer #contact_info {
-    display: grid;
-    grid-template-columns: 1fr;
+  footer #contact_info .infotext .credits {
+    letter-spacing: 0.5vw;
+    font-size: 3vw;
+    font-weight: bold;
+  }
+  footer #contact_info .infotext .credits span {
+    letter-spacing: 0px;
   }
 }
-@media (max-width: 500px) {
-  footer #contact_info {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+footer #contact_info .infotext p {
+  margin: 0%;
 }
 footer #contact_info .socialmedia {
   margin: 10px 0;
@@ -450,8 +477,8 @@ Sobre Mi
   color: #29292e;
 }
 #sobre-mi .sobregrid {
+  margin: auto;
   background-color: rgba(255, 255, 255, 0.8);
-  margin: 1% 2%;
   padding: 2%;
   position: relative;
   width: 75%;
@@ -535,6 +562,8 @@ Sobre Mi
   color: #fff2e1;
 }
 #contactame .contact-grid {
+  width: 40%;
+  margin: 40px auto 20px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1.7fr 0.3fr;
@@ -551,8 +580,7 @@ Sobre Mi
   grid-area: tumensaje;
 }
 #contactame .contact-grid .enviarbtn {
-  align-self: center;
-  justify-self: center;
+  width: 100%;
   grid-area: enviarbtn;
 }
 

@@ -19,6 +19,14 @@ Mapa de color (no estan aplicados en todos lados)
     portgrad:linear-gradient(to top, rgb(220, 209, 226), rgba(255, 255, 255, 0)), 
  );
 
+/* Text Gradient */
+
+@mixin textgradient($txtgrad) {
+    background: $txtgrad;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
  /*
 =====================
 Letter Spacing: 

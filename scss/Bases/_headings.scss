@@ -81,8 +81,7 @@ h3 {
 }
 
 h4 {
-    display: flex;
-    margin:10px 0;
+    margin:10px auto;
     padding:10px 0;
     font-family: 'montserrat', sans-serif;
     font-style: normal;
@@ -92,6 +91,7 @@ h4 {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    @include textgradient(map-get($paleta , gradf));
     @include titlespacing(4px, 30px, bolder,);
     @media (max-width: 900px) {
         font-size: 30px;
