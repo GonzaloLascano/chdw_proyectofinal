@@ -113,6 +113,8 @@ Sobre Mi
     }
     .contact-grid {
         width: 40%;
+        padding: 10px;
+        background-image: url(..images/contact_pattern.jpg);
         margin: 40px auto 20px auto;
         display: grid; 
         grid-template-columns: 1fr 1fr; 
