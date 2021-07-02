@@ -17,6 +17,11 @@ body {
 Mapa de color (no estan aplicados en todos lados)
 ===================== 
  */
+/*
+=====================
+Mapa de sombras (no estan aplicados en todos lados)
+===================== 
+ */
 /* Text Gradient */
 /*
 =====================
@@ -78,19 +83,24 @@ h2 {
   padding: 20px;
   margin-bottom: 15px;
   position: relative;
-  left: 30px;
   font-family: "spartan", sans-serif;
   font-size: 2vw;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 15px;
-  border-left: double 4px #531b48;
-  background-image: linear-gradient(152deg, rgba(255, 232, 186, 0.82) 5%, #ffbff200 100%);
-  text-shadow: 0px 0px 5px rgba(216, 216, 216, 0.849);
+  background-color: white;
+  box-shadow: 0px 0px 15px 0px #00000042;
 }
 @media (max-width: 900px) {
   h2 {
     font-weight: 600;
   }
+}
+h2 p {
+  margin: 0;
+  padding: 0;
+  background: #17102b;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h3 {
@@ -101,7 +111,7 @@ h3 {
   font-weight: 500;
   font-style: italic;
   font-size: 15px;
-  color: #677286;
+  color: #343946;
   text-align: center;
   text-shadow: 0px 0px 19px white;
 }
@@ -327,11 +337,12 @@ footer .home-button img:hover {
 footer #contact_info {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 0.3fr;
   align-content: center;
   align-items: center;
   width: 100%;
   color: #1c1c4b;
-  background: black;
+  background: #17102b;
 }
 @media (max-width: 900px) {
   footer #contact_info {
@@ -349,14 +360,13 @@ footer #contact_info .infotext {
   padding: 0px 20px;
   margin: 10px 0px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   font-weight: inherit;
   background: linear-gradient(2deg, #ffd889 -6%, #ff80ff 154%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.3fr;
   row-gap: 4px;
   justify-content: center;
   align-items: self-start;
@@ -385,26 +395,6 @@ footer #contact_info .infotext {
     border: none;
     border-bottom: dotted 2px grey;
     border-top: none;
-  }
-}
-footer #contact_info .infotext .credits {
-  margin: auto;
-  grid-column: 1/span 2;
-  letter-spacing: 0.5vw;
-  font-size: 1.3vw;
-  font-weight: bold;
-}
-footer #contact_info .infotext .credits span {
-  letter-spacing: 0px;
-}
-@media (max-width: 900px) {
-  footer #contact_info .infotext .credits {
-    letter-spacing: 0.5vw;
-    font-size: 3vw;
-    font-weight: bold;
-  }
-  footer #contact_info .infotext .credits span {
-    letter-spacing: 0px;
   }
 }
 footer #contact_info .infotext p {
@@ -446,9 +436,48 @@ footer #contact_info ul img:hover {
     opacity: 0.7;
   }
 }
+footer #contact_info .credits {
+  background-color: #343946;
+  grid-column: 1/span 3;
+  width: 100%;
+  text-align: center;
+}
+footer #contact_info .credits p {
+  margin: 0%;
+  padding: 5px 0;
+  letter-spacing: 0.5vw;
+  font-size: 1.1vw;
+  font-weight: bold;
+  background: linear-gradient(2deg, #ffd889 -6%, #ff80ff 154%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer #contact_info .credits p span {
+  letter-spacing: 0px;
+}
+@media (max-width: 900px) {
+  footer #contact_info .credits p {
+    letter-spacing: 0.5vw;
+    font-size: 3vw;
+    font-weight: bold;
+  }
+  footer #contact_info .credits p span {
+    letter-spacing: 0px;
+  }
+}
 
 main {
   margin: 0;
+}
+
+/*
+ =================================
+ Demo Reel
+ =================================
+*/
+#demo_reel {
+  padding-top: 65px;
+  background-color: white;
 }
 
 /* 
@@ -460,17 +489,19 @@ Sobre Mi
   overflow: hidden;
   position: relative;
   margin: 0;
-  padding: 30px 0;
+  padding: 80px 0 50px 0;
   background-color: #dcd1e2;
 }
 #sobre-mi .background {
+  padding: 80px 0 50px 0;
   position: absolute;
+  top: 0px;
   background-image: url(images/nftdonutrenderfinal.png);
   background-position: center;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
-  filter: blur(6px);
-  transform: scale(1.1);
+  filter: blur(4px);
   overflow: hidden;
 }
 #sobre-mi h2 {
@@ -491,7 +522,7 @@ Sobre Mi
   display: flex;
   flex-direction: row;
   align-items: center;
-  box-shadow: 1px 11px 18px -1px rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 2px 15px 0px #17102b;
 }
 #sobre-mi .sobregrid img {
   margin: 5px;
@@ -512,8 +543,8 @@ Sobre Mi
 #portfolio {
   position: relative;
   margin: 0;
-  padding: 30px 0;
-  background-image: linear-gradient(to top, #dcd1e2, rgba(255, 255, 255, 0));
+  padding: 80px 0 30px 0;
+  background-image: linear-gradient(to top, #09010c, rgba(43, 22, 109, 0.57));
 }
 #portfolio aside {
   position: relative;
@@ -555,17 +586,20 @@ Sobre Mi
 */
 #contactame {
   margin: 0;
-  padding: 30px 30px;
-  background-image: linear-gradient(270deg, #875053 10%, #ffbff200 100%);
+  padding: 80px 30px 0px 0px;
+  background-image: radial-gradient(circle, #ffe5ceab 34%, #2b061e 100%);
 }
 #contactame h5 {
   color: #fff2e1;
 }
 #contactame .contact-grid {
-  width: 40%;
-  padding: 10px;
-  background-image: url(..images/contact_pattern.jpg);
+  width: 60%;
+  padding: 15px;
+  background-image: url(images/contact_pattern.jpg);
+  background-size: 45%;
+  border-radius: 30px;
   margin: 40px auto 20px auto;
+  box-shadow: 0px 2px 15px 0px #17102b;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1.7fr 0.3fr;
@@ -584,6 +618,9 @@ Sobre Mi
 #contactame .contact-grid .enviarbtn {
   width: 100%;
   grid-area: enviarbtn;
+}
+#contactame img {
+  padding-left: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

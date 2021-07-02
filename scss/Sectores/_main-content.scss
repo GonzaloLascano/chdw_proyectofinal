@@ -2,6 +2,17 @@ main {
     margin: 0;
 }
 
+/*
+ =================================
+ Demo Reel
+ =================================
+*/
+#demo_reel {
+    padding-top: 65px;
+    background-color: white;
+
+}
+
 /* 
 =======================
 Sobre Mi
@@ -12,16 +23,19 @@ Sobre Mi
     overflow: hidden;
     position: relative;
     margin: 0;
-    padding: 30px 0;
+    padding: 80px 0 50px 0;
     background-color: map-get($paleta, "frio",);
     .background {
+        padding: 80px 0 50px 0;
         position: absolute;
+        top: 0px;
         background-image: url(images/nftdonutrenderfinal.png);
         background-position: center;
+        background-attachment: fixed;
         width: 100%;
         height: 100%;
-        filter: blur(6px);
-        transform: scale(1.1);
+        filter: blur(4px);
+
         overflow: hidden;
     }
     h2 {
@@ -43,7 +57,7 @@ Sobre Mi
         display: flex;
         flex-direction: row;
         align-items: center;
-        box-shadow: 1px 11px 18px -1px rgb(0 0 0 / 34%);
+        @include msshadow(map-get($paleta, "negro"));
         img {
             margin: 5px;
             width: 25%;
@@ -66,7 +80,7 @@ Sobre Mi
  #portfolio {
     position: relative;
     margin: 0;
-    padding: 30px 0;
+    padding: 80px 0 30px 0;
     background-image: map-get($paleta, "portgrad");
      aside{
         position: relative;
@@ -106,16 +120,19 @@ Sobre Mi
 
 #contactame {
     margin: 0;
-    padding: 30px 30px;
+    padding: 80px 30px 0px 0px;
     background-image: map-get($paleta, "contactgrad");
     h5 {
         color: map-get($paleta, "calidosm");
     }
     .contact-grid {
-        width: 40%;
-        padding: 10px;
-        background-image: url(..images/contact_pattern.jpg);
+        width: 60%;
+        padding: 15px;
+        background-image: url(images/contact_pattern.jpg);
+        background-size: 45%;
+        border-radius: 30px;
         margin: 40px auto 20px auto;
+        @include msshadow(map-get($paleta, "negro"));
         display: grid; 
         grid-template-columns: 1fr 1fr; 
         grid-template-rows: 1fr 1.7fr 0.3fr; 
@@ -131,6 +148,9 @@ Sobre Mi
             width: 100%;
             grid-area: enviarbtn; 
         }
+    }
+    img {
+        padding-left: 50px;
     }
     
 }

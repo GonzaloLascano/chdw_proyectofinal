@@ -11,13 +11,26 @@ Mapa de color (no estan aplicados en todos lados)
     calidob:#cca723, 
     frio:#dcd1e2,
     friof:#ff80ff,
-    negro:black,
-    gris:#677286,
+    negro:rgb(23, 16, 43),
+    gris:#343946,
     gradf:linear-gradient(2deg, #ffd889 -6%, #ff80ff 154%),
     titlegrad:linear-gradient(152deg, rgb(255 232 186 / 82%) 5%, #ffbff200 100%),
-    contactgrad: linear-gradient(270deg, #875053 10%, #ffbff200 100%), 
-    portgrad:linear-gradient(to top, rgb(220, 209, 226), rgba(255, 255, 255, 0)), 
+    contactgrad: radial-gradient(circle, #ffe5ceab 34%, #2b061e 100%), 
+    portgrad:linear-gradient(to top, #09010c, rgb(43 22 109 / 57%)), 
  );
+
+ /*
+=====================
+Mapa de sombras (no estan aplicados en todos lados)
+===================== 
+ */
+
+ @mixin msshadow($shcolor) {
+    box-shadow: 0px 2px 15px 0px $shcolor;
+ }
+ @mixin btnshadow($shcolor1, $shcolor2) {
+ box-shadow: inset 2px 2px 5px $shcolor1, inset -5px -5px 10px $shcolor2; /* -sombra doble en forma de boton- */
+ }
 
 /* Text Gradient */
 
