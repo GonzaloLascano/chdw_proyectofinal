@@ -117,11 +117,11 @@ Sobre Mi
             overflow: hidden;
             transition: all .100s;
             
-            img {
+                img {
                 position: absolute;
                 width: inherit;
-            }
-            .galhov {
+                }
+                 .galhov {
                 display:none;
                 position: absolute;
                 width: 100%;
@@ -131,60 +131,60 @@ Sobre Mi
                 font-size: 4vh;
                 color: white;
                 }
-            &:hover {
-                transform: scale(1.04) translateY(-15px); 
-                box-shadow: 0px 10px 10px 4px rgba(0, 0, 0, 0.418);
-                img {
-                  filter: blur(4px);
-                }
-                .galhov {
-                  display:flex;
-                  flex-direction: column;
-                  align-content: center;
-                  justify-content: center;
-                    a {
-                    font-size: 3.5vh;
-                    text-decoration: none;
-                    color: white;
-                    margin: 3% ​0 2% 0;
-                    animation-name: eyepop;
-                    animation-iteration-count: initial;
-                    animation-timing-function:cubic-bezier(0.785, 0.135, 0.15, 0.86);
-                    animation-duration: 1s;
-                    text-decoration: none;
+                &:hover {
+                    transform: scale(1.04) translateY(-15px); 
+                    box-shadow: 0px 10px 10px 4px rgba(0, 0, 0, 0.418);
+                    img {
+                    filter: blur(4px);
                     }
-                    @keyframes eyepop {
+                    .galhov {
+                        display:flex;
+                        flex-direction: column;
+                        align-content: center;
+                        justify-content: center;
+                        a {
+                            font-size: 3.5vh;
+                            text-decoration: none;
+                            color: white;
+                            margin: 3% ​0 2% 0;
+                            animation-name: eyepop;
+                            animation-iteration-count: initial;
+                            animation-timing-function:cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                            animation-duration: 1s;
+                            text-decoration: none;
+                        }
+                        @keyframes eyepop {
 
-                    0% {
-                        transform: scale(1)
+                            0% {
+                            transform: scale(1)
+                            }
+                        
+                            25% {
+                            transform: scale(1.5);
+                            }
+                        
+                            100% {
+                            transform: scale(1);
+                            }
+                        }
+                        h6 {
+                            font-family: Arial, Helvetica, sans-serif;  
+                            text-align: left;
+                            color:white;
+                            font-size: 3vh;
+                            padding: 0%;
+                            margin: 14% 13% 8% 8%;
+                            font-family: sans-serif;
+                        }
+                        p {
+                          font-size: 45%;
+                          font-family: sans-serif;
+                          padding: 0 14% 0 9%;
+                          text-align: left;
+                        }
                     }
-                    
-                    25% {
-                      transform: scale(1.5);
-                    }
-                
-                    100% {
-                      transform: scale(1);
-                    }
-                    }
-                  h6 {
-                    font-family: Arial, Helvetica, sans-serif;  
-                    text-align: left;
-                    color:white;
-                    font-size: 3vh;
-                    padding: 0%;
-                    margin: 14% 13% 8% 8%;
-                    font-family: sans-serif;
-                  }
-                  p {
-                    font-size: 45%;
-                    font-family: sans-serif;
-                    padding: 0 14% 0 9%;
-                    text-align: left;
-                    }
-                }
+                }    
             }    
-         }    
             @media (max-width: 900px) {
                 grid-template-columns: 1fr 1fr ; 
                 grid-template-rows: 1fr 1fr 1fr 1fr;
