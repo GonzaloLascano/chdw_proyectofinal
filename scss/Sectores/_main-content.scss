@@ -116,6 +116,9 @@ Sobre Mi
             height: 225px;
             overflow: hidden;
             transition: all .100s;
+            &:hover {
+                z-index: +2;
+            }
             
                 img {
                 position: absolute;

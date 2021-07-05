@@ -594,6 +594,9 @@ Sobre Mi
   overflow: hidden;
   transition: all 0.1s;
 }
+#portfolio .portGrid .portitems li:hover {
+  z-index: 2;
+}
 #portfolio .portGrid .portitems li img {
   position: absolute;
   width: inherit;
