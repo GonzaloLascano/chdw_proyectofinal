@@ -550,10 +550,6 @@ Sobre Mi
   padding: 80px 0 50px 0;
   background-image: linear-gradient(to top, #09010c, rgba(43, 22, 109, 0.57));
 }
-#portfolio aside {
-  position: relative;
-  right: 8%;
-}
 #portfolio .portGrid {
   margin-top: 20px;
   position: relative;
@@ -562,6 +558,17 @@ Sobre Mi
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+#portfolio .portGrid aside {
+  position: relative;
+  right: 4%;
+}
+#portfolio .portGrid aside:hover .plink-assets {
+  transform: translateX(-45%);
+}
+#portfolio .portGrid aside .plink-assets {
+  position: absolute;
+  transition: all 1s;
 }
 #portfolio .portGrid .portitems {
   display: grid;

@@ -82,10 +82,6 @@ Sobre Mi
     margin: 0;
     padding: 80px 0 50px 0;
     background-image: map-get($paleta, "portgrad");
-     aside{
-        position: relative;
-        right: 8%;
-    }  
     .portGrid {
         margin-top: 20px;
         position:relative;
@@ -93,14 +89,28 @@ Sobre Mi
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;    
+        align-items: center;
+        aside{
+            position: relative;
+            right: 4%;
+            &:hover {
+                .plink-assets{
+                    transform: translateX(-45%);
+                }
+            }
+            .plink-assets {
+                position: absolute;
+                transition: all 1s;
+            }
+        }      
         .portitems {  
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr; 
             grid-template-rows: 1fr 1fr; 
             list-style-type:none;
             padding: 0%;
-        li {
+            
+            li {
             position: relative;
             width:  225px;
             height: 225px;
@@ -174,7 +184,7 @@ Sobre Mi
                     }
                 }
             }    
-        }    
+         }    
             @media (max-width: 900px) {
                 grid-template-columns: 1fr 1fr ; 
                 grid-template-rows: 1fr 1fr 1fr 1fr;
