@@ -48,13 +48,16 @@ h2 {
     letter-spacing: 15px;
     background-color: white; 
     box-shadow: 0px 0px 15px 0px #00000042;
+    mix-blend-mode: screen;
     @media (max-width: 900px) {
     font-weight: 600;
     }
     p { 
-        margin: 0;
-        padding: 0;
+        border: solid 3px;
+        margin: 0px;
+        padding: 15px 11px 11px 11px;
         @include textgradient(map-get($paleta , negro));
+        @include msshadow(map-get($paleta, "negro"));
     }
     
 }
