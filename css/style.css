@@ -683,7 +683,10 @@ Sobre Mi
 #contactame {
   margin: 0;
   padding: 80px 30px 0px 0px;
-  background-image: radial-gradient(circle, #ffe5ceab 34%, #2b061e 100%);
+  background-color: rgba(100, 148, 237, 0.479);
+  background-image: url(images/huevo_selfie_background.jpg);
+  /* map-get($paleta, "contactgrad") */
+  background-size: cover;
 }
 #contactame h5 {
   color: #fff2e1;
