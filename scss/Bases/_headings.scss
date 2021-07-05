@@ -50,7 +50,14 @@ h2 {
     box-shadow: 0px 0px 15px 0px #00000042;
     mix-blend-mode: screen;
     @media (max-width: 900px) {
+    max-width: 80%;
+    font-weight: 800;
+    letter-spacing: 5px;
+    }
+    @media (max-width: 500px) {
+    max-width: 80%;
     font-weight: 600;
+    letter-spacing: 5px;
     }
     p { 
         border: solid 3px;

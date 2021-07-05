@@ -94,7 +94,16 @@ h2 {
 }
 @media (max-width: 900px) {
   h2 {
+    max-width: 80%;
+    font-weight: 800;
+    letter-spacing: 5px;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    max-width: 80%;
     font-weight: 600;
+    letter-spacing: 5px;
   }
 }
 h2 p {
