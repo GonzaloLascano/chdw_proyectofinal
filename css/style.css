@@ -350,13 +350,15 @@ footer #contact_info {
 }
 @media (max-width: 900px) {
   footer #contact_info {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 @media (max-width: 500px) {
   footer #contact_info {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1fr;
   }
 }
@@ -384,7 +386,7 @@ footer #contact_info .infotext {
     margin: 0px 20px;
     font-size: 3vw;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-column-gap: 10px;
     border: none;
     border-bottom: dotted 2px grey;
@@ -393,11 +395,16 @@ footer #contact_info .infotext {
 }
 @media (max-width: 500px) {
   footer #contact_info .infotext {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: stretch;
     padding: 10px 0px;
     margin: 0px 20px;
-    font-size: 3vw;
+    font-size: 4vw;
     border: none;
-    border-bottom: dotted 2px grey;
+    border-bottom: none;
     border-top: none;
   }
 }
@@ -430,13 +437,16 @@ footer #contact_info ul img:hover {
 }
 @media (max-width: 900px) {
   footer #contact_info ul img {
-    width: 40px;
+    padding: 10%;
+    width: 80px;
     opacity: 0.7;
   }
 }
 @media (max-width: 500px) {
   footer #contact_info ul img {
-    width: 30px;
+    justify-content: center;
+    padding: 10%;
+    width: 80px;
     opacity: 0.7;
   }
 }
@@ -634,6 +644,7 @@ Sobre Mi
   }
 }
 #portfolio .portGrid .portitems li:hover .galhov h6 {
+  height: 34%;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   color: white;
@@ -643,7 +654,9 @@ Sobre Mi
   font-family: sans-serif;
 }
 #portfolio .portGrid .portitems li:hover .galhov p {
-  font-size: 45%;
+  height: 34%;
+  font-size: 40%;
+  margin-top: auto;
   font-family: sans-serif;
   padding: 0 14% 0 9%;
   text-align: left;
