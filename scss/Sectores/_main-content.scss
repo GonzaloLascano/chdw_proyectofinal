@@ -95,7 +95,7 @@ Sobre Mi
             right: 4%;
             &:hover {
                 .plink-assets{
-                    transform: translateX(-45%);
+                    transform: translateX(-35%);
                 }
             }
             .plink-assets {
@@ -216,8 +216,7 @@ Sobre Mi
         padding: 15px;
         background-image: url(images/contact_pattern.jpg);
         background-size: 45%;
-        border-radius: 30px;
-        margin: 40px auto 20px auto;
+        margin: 40px auto -88px auto;
         @include msshadow(map-get($paleta, "negro"));
         display: grid; 
         grid-template-columns: 1fr 1fr; 
