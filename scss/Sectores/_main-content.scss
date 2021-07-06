@@ -10,6 +10,12 @@ main {
 #demo_reel {
     padding-top: 65px;
     background-color: white;
+    .carousel-control-prev, .carousel-control-next {
+        padding:19px;
+        width: 8%;
+        height: 50%;
+        margin: auto;
+    }
 
 }
 

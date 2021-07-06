@@ -502,6 +502,12 @@ main {
   padding-top: 65px;
   background-color: white;
 }
+#demo_reel .carousel-control-prev, #demo_reel .carousel-control-next {
+  padding: 19px;
+  width: 8%;
+  height: 50%;
+  margin: auto;
+}
 
 /* 
 =======================
