@@ -590,6 +590,7 @@ Sobre Mi
   transition: all 1s;
 }
 #portfolio .portGrid .portitems {
+  border: 10px solid white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -656,17 +657,17 @@ Sobre Mi
   }
 }
 #portfolio .portGrid .portitems li:hover .galhov h6 {
-  height: 34%;
+  height: 37%;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   color: white;
   font-size: 3vh;
   padding: 0%;
-  margin: 14% 13% 8% 8%;
+  margin: 14% 13% 0% 8%;
   font-family: sans-serif;
 }
 #portfolio .portGrid .portitems li:hover .galhov p {
-  height: 34%;
+  height: 56%;
   font-size: 40%;
   margin-top: auto;
   font-family: sans-serif;
@@ -704,6 +705,7 @@ Sobre Mi
   color: #fff2e1;
 }
 #contactame .contact-grid {
+  border: 10px solid white;
   width: 60%;
   padding: 15px;
   background-image: url(images/contact_pattern.jpg);
