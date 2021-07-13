@@ -183,12 +183,11 @@ h5 {
   line-height: 30px;
   font-weight: bolder;
   font-style: italic;
-  letter-spacing: 4px;
+  letter-spacing: 0.5vw;
   color: #494968;
 }
 @media (max-width: 900px) {
   h5 {
-    display: none;
     font-size: 3.5vw;
     text-align: center;
   }
@@ -242,7 +241,7 @@ header .header_link:visited {
 nav {
   position: sticky;
   top: 0px;
-  z-index: 1;
+  z-index: 3;
 }
 nav .main-menu {
   display: flex;
@@ -391,7 +390,7 @@ footer #contact_info .infotext {
 }
 @media (max-width: 900px) {
   footer #contact_info .infotext {
-    padding: 10px 0px;
+    padding: 10px 0px 0 0;
     margin: 0px 20px;
     font-size: 3vw;
     display: grid;
@@ -447,7 +446,7 @@ footer #contact_info ul img:hover {
 @media (max-width: 900px) {
   footer #contact_info ul img {
     padding: 10%;
-    width: 80px;
+    width: 69px;
     opacity: 0.7;
   }
 }
@@ -455,7 +454,7 @@ footer #contact_info ul img:hover {
   footer #contact_info ul img {
     justify-content: center;
     padding: 10%;
-    width: 80px;
+    width: 54px;
     opacity: 0.7;
   }
 }
@@ -539,29 +538,28 @@ Sobre Mi
 #sobre-mi .sobregrid {
   margin: 3% auto;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 2%;
+  padding: 0%;
   position: relative;
   width: 75%;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 1.5vw;
+  font-weight: 900;
+  font-size: 1.7vw;
   letter-spacing: 2px;
-  word-spacing: 7px;
-  line-height: 175%;
+  word-spacing: 0.7vw;
+  line-height: 154%;
   display: flex;
   flex-direction: row;
   align-items: center;
   box-shadow: 0px 2px 15px 0px #343946;
 }
 #sobre-mi .sobregrid img {
-  margin: 5px;
-  width: 20%;
+  width: 26%;
 }
 #sobre-mi .sobregrid p {
-  padding-left: 4%;
-  margin-left: 1%;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0% 3% 0 2%;
   color: #2c221a;
-  text-shadow: 2px ​2px 1px white;
+  text-shadow: 0px 0px 4px #ffffff;
 }
 
 /*

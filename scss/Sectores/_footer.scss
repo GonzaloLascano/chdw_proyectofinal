@@ -59,7 +59,7 @@ footer {
             border-bottom: none;
             border-top: none;
             @media (max-width: 900px) {
-                padding: 10px 0px;
+                padding: 10px 0px 0 0;
                 margin: 0px 20px;
                 font-size: 3vw;
                 display: grid;
@@ -110,13 +110,13 @@ footer {
             }
             @media (max-width: 900px) {
                 padding: 10%;
-                width: 80px;
+                width: 69px;
                 opacity: 0.7;
             }
             @media (max-width: 500px) {
                 justify-content: center;
                 padding: 10%;
-                width: 80px;
+                width: 54px;
                 opacity: 0.7;
             }
         }

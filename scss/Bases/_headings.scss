@@ -123,10 +123,9 @@ h5 {
     line-height: 30px;
     font-weight: bolder;
     font-style: italic;
-    letter-spacing: 4px;
+    letter-spacing: 0.5vw;
     color: rgb(73, 73, 104);
     @media (max-width: 900px) {
-        display: none;
         font-size: 3.5vw;
         text-align: center;
     }
