@@ -1,13 +1,24 @@
 main {
+    display: flex;
+    position: relative;
     margin: 0;
+    width: 100%;
+    height: 106vh;
+    overflow: hidden;
 }
-
+@mixin horisectionize($lalign){
+    width: 100%;
+    height:inherit;
+    position: absolute;
+    left: $lalign;
+}
 /*
  =================================
  Demo Reel
  =================================
 */
 #demo_reel {
+    @include horisectionize(0px);
     padding-top: 65px;
     background-color: white;
     .carousel-control-prev, .carousel-control-next {
@@ -26,13 +37,12 @@ Sobre Mi
 */
 
 #sobre-mi {
+    @include horisectionize(100%);
     overflow: hidden;
-    position: relative;
     margin: 0;
     padding: 80px 0 50px 0;
     background-color: map-get($paleta, "frio",);
     .background {
-        padding: 80px 0 50px 0;
         position: absolute;
         top: 0px;
         background-image: url(images/nftdonutrenderfinal.png);
@@ -49,11 +59,11 @@ Sobre Mi
     }
 
     .sobregrid {
-        margin: 3% auto;
+        margin: auto;
         background-color: rgb(255 255 255 / 80%);
         padding: 0%;
         position: relative;
-        width: 75%;
+        width: 65%;
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
         font-size: 1.7vw;
@@ -84,12 +94,12 @@ Sobre Mi
 */
 
  #portfolio {
-    position: relative;
+    @include horisectionize(200%);
     margin: 0;
     padding: 80px 0 50px 0;
     background-image: map-get($paleta, "portgrad");
     .portGrid {
-        margin-top: 20px;
+        margin-top: 4%;
         position:relative;
         display:flex;
         flex-direction: row;
@@ -218,6 +228,7 @@ Sobre Mi
 */
 
 #contactame {
+    @include horisectionize(300%);
     margin: 0;
     padding: 80px 30px 0px 0px;
     background-color: rgba(100, 148, 237, 0.479);
@@ -232,7 +243,7 @@ Sobre Mi
         padding: 15px;
         background-image: url(images/contact_pattern.jpg);
         background-size: 45%;
-        margin: 40px auto -88px auto;
+        margin: 6% auto -88px auto;
         @include msshadow(map-get($paleta, "negro"));
         display: grid; 
         grid-template-columns: 1fr 1fr; 
@@ -251,6 +262,8 @@ Sobre Mi
         }
     }
     img {
+        position: absolute;
+        bottom: 0;
         padding-left: 50px;
     }
     
