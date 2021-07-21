@@ -575,6 +575,7 @@ Sobre Mi
 }
 #sobre-mi .sobregrid img {
   width: 20%;
+  max-width: 539px;
   flex-shrink: 0;
 }
 #sobre-mi .sobregrid p {

@@ -79,11 +79,12 @@ Sobre Mi
         @include msshadow(map-get($paleta, "gris"));
         img {
             width: 20%;
+            max-width: 539px;
             flex-shrink: 0;
         }
         p {
             margin: .5rem 0 .5rem 0;
-            padding: 0% 3% 0 2%;
+            padding: 0% 3% 0 2%;    
             color: #2c221a;
             text-shadow: 0px 0px 4px #ffffff;
         }
