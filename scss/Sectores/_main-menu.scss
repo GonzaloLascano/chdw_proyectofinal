@@ -28,35 +28,6 @@ nav {
             font-size: small; 
         }
        
-        /* submenu -----------------*/
-
-        .submenu {
-            background-color: map-get($paleta, calidosm);
-            position: absolute;
-            display: none;
-            margin: 0;
-            padding: 0;
-            li {
-                text-align: start;
-                width: 100%;
-                font-size: smaller;
-                border-right: 0;
-                border-bottom: dotted map-get($paleta, frio ) 2px;
-                letter-spacing: 4px;
-                z-index: +2;
-                a{
-                    &:hover {
-                        color: #ffffff;
-                    }
-                }
-            }
-        }
-        .submenu-parent:hover .submenu {
-            display: block;
-        }/* esta seleccion iria anidada en .submenu o a .submenu-parent ? */
-        
-        /* /submenu ---------------*/
-       
         li {
             width: 400px;
             position: relative;
@@ -83,7 +54,44 @@ nav {
     }
 }
 
- 
+.accordion-item {
+    border: none;
+    .accordion-body {
+        padding:0;
+    }
+    .accordion-header {
+        padding: 20px
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        color: rgb(68, 63, 63);
+        transition: all, .8s;
+        &:hover {
+            background-color: map-get($paleta , frio );
+        } 
+        .reelbtn {
+            padding:0;
+            width: 100%;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            font-family: 'montserrat', sans-serif;
+            font-weight: bold;
+            letter-spacing: 1.2vw;
+            background-color:transparent;
+            text-transform: uppercase;
+            &:not(.collapsed) {
+                color: rgb(68, 63, 63);
+                background-color:transparent;
+                box-shadow: none
+            }
+        }
+    }
+}
+
+
+
 
 
 

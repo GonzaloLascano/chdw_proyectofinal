@@ -48,75 +48,75 @@
     <!-- encabezado -->
     
     <header id="home">
-
         <h1><a class="header_link" href="pages/la-pieza.html">ADMIGUA<span>L</span></a></h1>
-        
-        <!-- la idea es que al tocar la imagen la pagina scrollee al reel y la pestaña "reel" del <nav> aparezca resaltada  -->
 
         <h3> <p class="upper"> 3D Generalist - Animator - Video Editor </p> 
         <p>...o algo por el estilo.</p></h3>
     </header>
 
-    <!-- Separador Menu -->
-
+  <!-- Separador Menu -->
     <nav>
             
         <ul class="main-menu">
-             <li class="reel"><a href="#demo_reel" title="Ver demo reel"> reel </a></li>
+             <!-- <li><a href="#demo_reel" title="Ver demo reel"> reel </a></li> -->
              <li><a href="#sobre-mi"  title="Ver sobre mi"> sobre mi</a></li>
-             <li class="submenu-parent"><a href="#portfolio"  title="Ver Portfolio">portfolio</a>
-                <!-- <ul class="submenu">
-                    <li><a href="link a portfolio parcial"  title="Portfolio 3d"> 3D </a></li>
-                    <li><a href="link a portfolio parcial"  title="Portfolio de animacion"> Animación </a></li>
-                    <li><a href="link a portfolio parcial"  title="Portfolio de edicion"> Edición de Video </a></li>
-                </ul> -->
+             <li>
+               <a href="#portfolio"  title="Ver Portfolio">portfolio</a>
              </li>
-             <li><a href="#contactame"  title="Ver info de contacto"> contacto </a></li>
+             <li><a href="#contactame" title="Ver info de contacto"> contacto </a></li>
         </ul>            
             
     </nav>
 
-    <!-- Contenido principal del cuerpo. La idea es que este sea el unico contenido de la pagina que se
-    reemplace al tocar en los diferentes links del menu -->
+    <!-- Demo Reel Acordeon -->
 
+    <div class="accordion" id="accordionBasic">
+      <div class="accordion-item">
+        <a href="#demo_reel">
+          <div class="accordion-header" id="headingOne">
+            <button class="accordion-button reelbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              DEMO REEL
+            </button>
+          </div>
+        </a>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionBasic">
+          <div class="accordion-body">
+            
+            <section id="demo_reel">
+              <!-- --------------------carousel-------------------- -->        
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="false">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/371497001?color=ff0179&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                    <div class="carousel-item">
+                      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/296347489?color=c9ff23" style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                         frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                         <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                    <div class="carousel-item">
+                      <div style="padding:56.25% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/298697003?color=ff9933" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+          </section>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <main>
-
-    <section id="demo_reel">
-
-        <!-- --------------------carousel-------------------- -->
-
-
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="false"> <!-- se puede sacar o cambiar este este id? -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/371497001?color=ff0179&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-              </div>
-              <div class="carousel-item">
-                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/296347489?color=c9ff23" style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                   frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-                   <script src="https://player.vimeo.com/api/player.js"></script>
-              </div>
-              <div class="carousel-item">
-                <div style="padding:56.25% 0 0 0;position:relative;">
-                  <iframe src="https://player.vimeo.com/video/298697003?color=ff9933" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-                  <script src="https://player.vimeo.com/api/player.js"></script>
-              </div>
-            </div>
-          <!-- se me superponen los botones a los comandos del video -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-      </div>
-
-    </section>
-
     <section id="sobre-mi">
         
       <div class="background"></div>

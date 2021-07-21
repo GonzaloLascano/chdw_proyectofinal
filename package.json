@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/GonzaloLascano/chdw_proyectofinal/issues"
   },
-  "homepage": "https://github.com/GonzaloLascano/chdw_proyectofinal#readme"
+  "homepage": "https://github.com/GonzaloLascano/chdw_proyectofinal#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
+  "devDependencies": {}
 }

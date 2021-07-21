@@ -254,9 +254,6 @@ nav .main-menu {
   letter-spacing: 1.2vw;
   background-color: white;
   text-transform: uppercase;
-  /* submenu -----------------*/
-  /* esta seleccion iria anidada en .submenu o a .submenu-parent ? */
-  /* /submenu ---------------*/
 }
 @media (max-width: 900px) {
   nav .main-menu {
@@ -267,28 +264,6 @@ nav .main-menu {
   nav .main-menu .reel {
     display: none;
   }
-}
-nav .main-menu .submenu {
-  background-color: #fff2e1;
-  position: absolute;
-  display: none;
-  margin: 0;
-  padding: 0;
-}
-nav .main-menu .submenu li {
-  text-align: start;
-  width: 100%;
-  font-size: smaller;
-  border-right: 0;
-  border-bottom: dotted #dcd1e2 2px;
-  letter-spacing: 4px;
-  z-index: 2;
-}
-nav .main-menu .submenu li a:hover {
-  color: #ffffff;
-}
-nav .main-menu .submenu-parent:hover .submenu {
-  display: block;
 }
 nav .main-menu li {
   width: 400px;
@@ -314,6 +289,42 @@ nav .main-menu a {
 }
 nav .main-menu a:hover {
   background-color: #dcd1e2;
+}
+
+.accordion-item {
+  border: none;
+}
+.accordion-item .accordion-body {
+  padding: 0;
+}
+.accordion-item .accordion-header {
+  padding: 20px;
+}
+.accordion-item a {
+  display: block;
+  text-decoration: none;
+  color: #443f3f;
+  transition: all, 0.8s;
+}
+.accordion-item a:hover {
+  background-color: #dcd1e2;
+}
+.accordion-item a .reelbtn {
+  padding: 0;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.2vw;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.accordion-item a .reelbtn:not(.collapsed) {
+  color: #443f3f;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 /*
@@ -493,9 +504,10 @@ main {
   position: relative;
   margin: 0;
   width: 100%;
-  height: 106vh;
+  max-height: 800px;
+  height: 50rem;
   overflow: hidden;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: both mandatory;
 }
 
 /*
@@ -504,12 +516,7 @@ main {
  =================================
 */
 #demo_reel {
-  width: 100%;
-  height: inherit;
-  position: absolute;
-  left: 0px;
-  scroll-snap-align: start;
-  padding-top: 65px;
+  padding: 0;
   background-color: white;
 }
 #demo_reel .carousel-control-prev, #demo_reel .carousel-control-next {
@@ -528,11 +535,11 @@ Sobre Mi
   width: 100%;
   height: inherit;
   position: absolute;
-  left: 100%;
+  left: 0%;
   scroll-snap-align: start;
   overflow: hidden;
   margin: 0;
-  padding: 80px 0 50px 0;
+  padding: 70px 0 0 0;
   background-color: #dcd1e2;
 }
 #sobre-mi .background {
@@ -550,14 +557,14 @@ Sobre Mi
   color: #29292e;
 }
 #sobre-mi .sobregrid {
-  margin: auto;
+  margin: 1.2rem auto 0 auto;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 0%;
   position: relative;
   width: 65%;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  font-size: 1.7vw;
+  font-size: 1.4vw;
   letter-spacing: 2px;
   word-spacing: 0.7vw;
   line-height: 154%;
@@ -567,7 +574,7 @@ Sobre Mi
   box-shadow: 0px 2px 15px 0px #343946;
 }
 #sobre-mi .sobregrid img {
-  width: 26%;
+  width: 20%;
 }
 #sobre-mi .sobregrid p {
   margin: 0.5rem 0 0.5rem 0;
@@ -585,14 +592,14 @@ Sobre Mi
   width: 100%;
   height: inherit;
   position: absolute;
-  left: 200%;
+  left: 100%;
   scroll-snap-align: start;
   margin: 0;
-  padding: 80px 0 50px 0;
+  padding: 70px 0 0px 0;
   background-image: linear-gradient(to top, #09010c, rgba(43, 22, 109, 0.57));
 }
 #portfolio .portGrid {
-  margin-top: 4%;
+  margin-top: 0;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -719,7 +726,7 @@ Sobre Mi
   width: 100%;
   height: inherit;
   position: absolute;
-  left: 300%;
+  left: 200%;
   scroll-snap-align: start;
   margin: 0;
   padding: 80px 30px 0px 0px;
