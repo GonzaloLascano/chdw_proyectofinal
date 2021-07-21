@@ -22,7 +22,7 @@ main {
 */
 #demo_reel {
     padding:0;
-    background-color: white;
+    background-color: white;    
     .carousel-control-prev, .carousel-control-next {
         padding:19px;
         width: 8%;
@@ -79,6 +79,7 @@ Sobre Mi
         @include msshadow(map-get($paleta, "gris"));
         img {
             width: 20%;
+            flex-shrink: 0;
         }
         p {
             margin: .5rem 0 .5rem 0;
