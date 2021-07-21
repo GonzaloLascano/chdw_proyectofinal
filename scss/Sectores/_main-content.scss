@@ -75,11 +75,10 @@ Sobre Mi
         display: flex;
         flex-direction: row;
         align-items: center;
-
         @include msshadow(map-get($paleta, "gris"));
         img {
             width: 20%;
-            max-width: 539px;
+            max-width: 300px;
             flex-shrink: 0;
         }
         p {
