@@ -249,7 +249,7 @@ nav .main-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 0 0 5px 0;
   margin: 0;
   font-family: "montserrat", sans-serif;
   font-weight: bold;
@@ -259,7 +259,6 @@ nav .main-menu {
 }
 @media (max-width: 900px) {
   nav .main-menu {
-    flex-direction: column;
     letter-spacing: 10px;
     font-size: small;
   }
@@ -280,6 +279,7 @@ nav .main-menu li:last-child {
 @media (max-width: 900px) {
   nav .main-menu li {
     border: none;
+    width: 200px;
   }
 }
 nav .main-menu a {
@@ -291,6 +291,26 @@ nav .main-menu a {
 }
 nav .main-menu a:hover {
   background-color: #dcd1e2;
+}
+nav .main-menu a i {
+  display: none;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: normal;
+}
+@media (max-width: 900px) {
+  nav .main-menu a i {
+    display: inline;
+  }
+}
+nav .main-menu a p {
+  margin: 0%;
+  display: auto;
+}
+@media (max-width: 900px) {
+  nav .main-menu a p {
+    display: none;
+  }
 }
 
 .accordion-item {
@@ -529,11 +549,14 @@ main {
   height: 50%;
   margin: auto;
 }
+#demo_reel a {
+  position: relative;
+}
 #demo_reel .home-button img {
   width: 40px;
   position: absolute;
-  left: 1%;
-  bottom: -81%;
+  left: 21px;
+  bottom: 60px;
   opacity: 0.5;
   transform: rotate(180deg);
   transition: all, 0.8s;
@@ -603,7 +626,7 @@ Sobre Mi
     line-height: 155%;
     background-image: url(./images/Lowpolym3.png);
     background-size: cover;
-    background-position: top;
+    background-position-y: 16%;
   }
 }
 @media (max-width: 500px) {
@@ -635,8 +658,8 @@ Sobre Mi
 }
 @media (max-width: 900px) {
   #sobre-mi .sobregrid p {
-    margin: 4%;
-    padding: 2%;
+    margin: 0%;
+    padding: 6%;
     background-color: rgba(255, 255, 255, 0.7);
   }
 }
@@ -852,10 +875,22 @@ Sobre Mi
   width: 100%;
   grid-area: enviarbtn;
 }
+@media (max-width: 900px) {
+  #contactame .contact-grid {
+    margin: 6% 0 -87px auto;
+    width: 80%;
+  }
+}
 #contactame img {
   position: absolute;
   bottom: 0;
   padding-left: 50px;
+}
+@media (max-width: 900px) {
+  #contactame img {
+    bottom: -20px;
+    padding-left: 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

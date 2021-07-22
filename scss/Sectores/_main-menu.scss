@@ -11,7 +11,7 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0;
+        padding: 0 0 5px 0;
         margin: 0; 
         font-family: 'montserrat', sans-serif;
         font-weight: bold;
@@ -23,7 +23,6 @@ nav {
             .reel {
                 display:none;
             }
-            flex-direction: column;
             letter-spacing: 10px;
             font-size: small; 
         }
@@ -39,6 +38,7 @@ nav {
             }
             @media (max-width: 900px) {
                 border: none;
+                width: 200px;
             }
         }
         a {
@@ -49,6 +49,22 @@ nav {
             transition: all, .8s;
             &:hover {
                 background-color: map-get($paleta , frio );
+            }
+            i {
+                display: none;
+                font-size: 30px;
+                font-weight: 900;
+                letter-spacing: normal;
+                @media (max-width: 900px) {
+                    display:inline;    
+                }
+            }
+            p { 
+                margin: 0%;
+                display: auto;
+                @media (max-width:900px) {
+                    display: none;
+                }
             } 
         }
     }
