@@ -85,10 +85,10 @@ Sobre Mi
         position: relative;
         width: 65%;
         height: auto;
-        max-height: 500px;
+        max-height: 550px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
-        font-size: 1.4vw;
+        font-size: 120%;
         letter-spacing: 2px;
         word-spacing: 0.7vw;
         line-height: 154%;
@@ -120,8 +120,7 @@ Sobre Mi
             line-height: 155%;
         }
         img {
-            width: 20%;
-            max-width: 300px;
+            max-height: inherit;
             flex-shrink: 0;
             @media (max-width:900px){
                 display: none;
