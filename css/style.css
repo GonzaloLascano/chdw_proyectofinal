@@ -94,14 +94,16 @@ h2 {
 }
 @media (max-width: 900px) {
   h2 {
+    width: auto;
     max-width: 80%;
     font-weight: 800;
     letter-spacing: 5px;
+    font-size: 3.5vw;
   }
 }
 @media (max-width: 500px) {
   h2 {
-    max-width: 80%;
+    max-width: 90%;
     font-weight: 600;
     letter-spacing: 5px;
   }
@@ -337,7 +339,7 @@ footer {
 }
 footer .home-button img {
   width: 70px;
-  margin: 0px 1.4% -2% 0px;
+  margin: 0px 0.5% -2% 0px;
   position: absolute;
   bottom: 130%;
   right: 0%;
@@ -349,12 +351,14 @@ footer .home-button img:hover {
 }
 @media (max-width: 900px) {
   footer .home-button img {
-    width: 40px;
+    width: 60px;
+    margin: 0px 1% -14% 0px;
   }
 }
 @media (max-width: 500px) {
   footer .home-button img {
-    width: 30px;
+    width: 50px;
+    margin: 0px 1% -14% 0px;
   }
 }
 footer #contact_info {
@@ -573,16 +577,55 @@ Sobre Mi
   align-items: center;
   box-shadow: 0px 2px 15px 0px #343946;
 }
+@media (max-width: 900px) {
+  #sobre-mi .sobregrid {
+    margin: 50px 0 0 0;
+    padding: 0;
+    width: 100%;
+    font-weight: 600;
+    font-size: 3vw;
+    letter-spacing: 0px;
+    word-spacing: 0.8vw;
+    line-height: 155%;
+    background-image: url(./images/Lowpolym3.png);
+    background-size: cover;
+    background-position: top;
+  }
+}
+@media (max-width: 500px) {
+  #sobre-mi .sobregrid {
+    margin: 50px 0 0 0;
+    padding: 0;
+    width: 100%;
+    font-weight: 600;
+    font-size: 4vw;
+    letter-spacing: 0px;
+    word-spacing: 0.8vw;
+    line-height: 155%;
+  }
+}
 #sobre-mi .sobregrid img {
   width: 20%;
   max-width: 300px;
   flex-shrink: 0;
+}
+@media (max-width: 900px) {
+  #sobre-mi .sobregrid img {
+    display: none;
+  }
 }
 #sobre-mi .sobregrid p {
   margin: 0.5rem 0 0.5rem 0;
   padding: 0% 3% 0 2%;
   color: #2c221a;
   text-shadow: 0px 0px 4px #ffffff;
+}
+@media (max-width: 900px) {
+  #sobre-mi .sobregrid p {
+    margin: 4%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
 }
 
 /*
@@ -608,10 +651,29 @@ Sobre Mi
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+@media (max-width: 900px) and (min-width: 500px) {
+  #portfolio .portGrid {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 #portfolio .portGrid aside {
   position: relative;
   right: 4%;
+}
+@media (max-width: 900px) {
+  #portfolio .portGrid aside {
+    transform: rotate(90deg) translate(-340px, -26px);
+  }
+}
+@media (max-width: 500px) {
+  #portfolio .portGrid aside {
+    transform: rotate(329deg) translate(-131px, -62px) rotatey(180deg);
+    position: relative;
+    bottom: 333px;
+  }
 }
 #portfolio .portGrid aside:hover .plink-assets {
   transform: translateX(-35%);
@@ -627,6 +689,29 @@ Sobre Mi
   grid-template-rows: 1fr 1fr;
   list-style-type: none;
   padding: 0%;
+  background: #dcd1e2;
+}
+@media (max-width: 900px) {
+  #portfolio .portGrid .portitems {
+    height: 500px;
+    overflow-y: scroll;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  #portfolio .portGrid .portitems::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  #portfolio .portGrid .portitems {
+    width: 245px;
+    height: 500px;
+    display: flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+  }
 }
 #portfolio .portGrid .portitems li {
   position: relative;
@@ -704,19 +789,6 @@ Sobre Mi
   font-family: sans-serif;
   padding: 0 14% 0 9%;
   text-align: left;
-}
-@media (max-width: 900px) {
-  #portfolio .portGrid .portitems {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
-}
-@media (max-width: 500px) {
-  #portfolio .portGrid .portitems {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
 }
 
 /*
