@@ -529,6 +529,18 @@ main {
   height: 50%;
   margin: auto;
 }
+#demo_reel .home-button img {
+  width: 40px;
+  position: absolute;
+  left: 1%;
+  bottom: -81%;
+  opacity: 0.5;
+  transform: rotate(180deg);
+  transition: all, 0.8s;
+}
+#demo_reel .home-button img:hover {
+  opacity: 0.8;
+}
 
 /* 
 =======================

@@ -37,9 +37,19 @@ main {
         height: 50%;
         margin: auto;
     }
-
+    .home-button img {
+        width: 40px;
+        position: absolute;
+        left: 1%;
+        bottom: -81%;
+        opacity: 0.5;
+        transform: rotate(180deg);
+        transition: all, .8s;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 }
-
 /* 
 =======================
 Sobre Mi
