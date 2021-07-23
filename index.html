@@ -30,8 +30,9 @@
     <!-- cdn animation css-->
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- SEO -->
 
     <meta name="description" content="Admigual Arte digital - Generalista 3d, 
@@ -48,7 +49,7 @@
     <!-- encabezado -->
     
     <header id="home">
-        <h1><a class="header_link" href="pages/la-pieza.html">ADMIGUA<span>L</span></a></h1>
+        <h1><a class="header_link" href="pages/la-pieza.html" title="que significa La Pieza?">ADMIGUA<span>L</span></a></h1>
 
         <h3> <p class="upper"> 3D Generalist - Animator - Video Editor </p> 
         <p>...o algo por el estilo.</p></h3>
@@ -86,7 +87,10 @@
                     <span class="visually-hidden">Next</span>
                   </button>
             </div>
-            <a href="#nav" class="home-button" title="ir al inicio"><img src="images/chevron-up.png" alt="Ir al inicio"></a>
+            <a href="#nav" class="home-button" title="ir al inicio"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDMwNiAzMDYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGcgaWQ9ImtleWJvYXJkLWFycm93LWRv
+              d24iPgoJCTxwb2x5Z29uIHBvaW50cz0iMzUuNyw1OC42NSAxNTMsMTc1Ljk1MSAyNzAuMyw1OC42NSAzMDYsOTQuMzUxIDE1MywyNDcuMzUgMCw5NC4zNTEgICAiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcG9seWdvbj4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbn
+              M9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0
+              dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" /></a>
           </section>
           </div>
         </div>
@@ -103,7 +107,6 @@
   <!-- Separador Menu -->
     <nav id="nav">         
         <ul class="main-menu">
-             <!-- <li><a href="#demo_reel" title="Ver demo reel"> reel </a></li> -->
              <li>
                <a href="#sobre-mi"  title="Ver sobre mi"> <p>sobre mi</p><i class="fi-rr-info" title="sobre mi"></i></a>
             </li>
@@ -116,7 +119,7 @@
         </ul>            
                 
     </nav>
-    
+     
   <main>
     <section id="sobre-mi">
         
@@ -266,23 +269,22 @@
              Codigo Postal: 1429 
             </p>
             <p>
-                Telefono: +54 9 11 34xxxx658 <br>
-                Mail:admigualanimation@gmail.com
+                Telefono: +54 9 11-2404-9941 <br>
+                Mail: admigualanimation@gmail.com
             </p>
         </div>
         <ul class="socialmedia"> 
-            <li><a href="https://web.whatsapp.com/" title="comunicate por whatsapp" target="_blank"> <img class="social_icon" src="images/whatsapp.png" alt="whatsapp logo" loading="lazy"> </a> </li>
+            <li><a href="https://api.whatsapp.com/send?phone=5491124049941" title="comunicate por whatsapp" target="_blank"> <img class="social_icon" src="images/whatsapp.png" alt="whatsapp logo" loading="lazy"> </a> </li>
             <li><a href="https://www.linkedin.com/in/admigual/" title="comunicate por whatsapp" target="_blank"> <img class="social_icon" src="images/linkedin.png" alt="linkedin logo" loading="lazy"> </a> </li>
             <li><a href="https://vimeo.com/admigual/" title="comunicate por whatsapp" target="_blank"> <img class="social_icon" src="images/vimeo-social-logo.png" alt="vimeo logo" loading="lazy"> </a> </li>
             <li><a href="https://www.instagram.com/admigual/" title="comunicate por whatsapp" target="_blank"> <img class="social_icon" src="images/instagram.png" alt="instagram logo" loading="lazy"> </a> </li>
        
         </ul>
         <div class="credits">
-          <p> Desarrollado por Admigual </p>
+          <p> Desarrollado por Admigual® </p>
         </div>   
     </div>
     </footer>
-
     <!-- bootstrap bundle(?) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 

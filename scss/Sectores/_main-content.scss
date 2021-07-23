@@ -337,8 +337,15 @@ Sobre Mi
             grid-area: enviarbtn;
             }
         @media (max-width:900px) {
-            margin: 6% 0 -87px auto;
+            margin: 6% -30px -70px auto;
             width: 80%;
+            grid-template-areas:
+                "tunombre tunombre"
+                "tuemail tuemail"
+                "tumensaje tumensaje"
+                "enviarbtn enviarbtn";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: .5fr .5fr 1fr;
         }
     }
     img {
