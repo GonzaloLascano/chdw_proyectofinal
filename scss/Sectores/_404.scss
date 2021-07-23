@@ -1,0 +1,46 @@
+.errorbody {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    h4 {
+        position: absolute;
+        top: -11%;
+        left: 8%;
+        font-size: 17vw;
+        font-weight: 900;
+        text-align: start;
+        
+    }
+    .errorsect {
+        &:hover {
+            .dice {
+            z-index: +3;
+            }
+        }
+    
+        img {
+            position: absolute;
+            left: 10%;
+            width: 80%;
+        
+        }
+    }
+    div {
+        color: map-get($paleta, 'grisoft');
+        position: relative;
+        top: 75vh;
+        text-align: start;
+        font-size: 3.5vh;
+        padding: 25px 15%;
+        font-family:'montserrat', sans-serif;
+        font-weight: bolder;
+        span {
+            padding: 0px 3px;
+            transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            &:hover {
+                background: #664182;
+                color: white
+            }
+        }
+    }
+}

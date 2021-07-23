@@ -896,4 +896,44 @@ Sobre Mi
   }
 }
 
+.errorbody {
+  position: relative;
+  background-color: white;
+  background-image: none;
+}
+.errorbody h4 {
+  position: absolute;
+  top: -11%;
+  left: 8%;
+  font-size: 17vw;
+  font-weight: 900;
+  text-align: start;
+}
+.errorbody .errorsect:hover .dice {
+  z-index: 3;
+}
+.errorbody .errorsect img {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+}
+.errorbody div {
+  color: #8e9dc0;
+  position: relative;
+  top: 75vh;
+  text-align: start;
+  font-size: 3.5vh;
+  padding: 25px 15%;
+  font-family: "montserrat", sans-serif;
+  font-weight: bolder;
+}
+.errorbody div span {
+  padding: 0px 3px;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.errorbody div span:hover {
+  background: #664182;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
